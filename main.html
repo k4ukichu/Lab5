@@ -1,7 +1,7 @@
 <html>
 <head>
 <head>
-<title>ENGO 651 veer Lab 5</title>
+<title> Polylinelab</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-Scalable=no" />
 <meta charset="utf-8">
@@ -20,23 +20,24 @@
 <script src='https://api.mapbox.com/mapbox.js/plugins/turf/v3.0.11/turf.min.js'></script>
 <script src='https://www.unpkg.com/turf@3.0.14/turf.js'></script>
  
-<link rel="stylesheet" href="style.css"></script>
+<link rel="stylesheet" href="style.css">
  </head>
 
 <body>
+    <h1>PolyLine</h1><hr>
  <div id="map"></div>
 
 <div class="button-box col-lg-10">
 
-<button type="button" class="btn btn-success" onclick="drawline()" id="draw" data-toggle="tooltip" title="Select the button">draw the line</button>
+<a type="button" class="btn btn-outline-primary" onclick="drawline()" id="draw" data-toggle="tooltip" title="Select the button">Draw</a>
  
-<button type="button" class="btn btn-info" onclick="check()" id="simplify">Simplify the Line</button>
+<a type="button" class="btn btn-outline-primary" onclick="straight()" id="simplify">Simplify</a>
 
-<button type="button" class="btn btn-danger" onclick="deleteline()" id="delete">Delete the Line</button>
+<a type="button" class="btn btn-outline-dark" onclick="deleteline()" id="delete">Clear</a>
 
 </div>
 
-<script type="text/javascript "src="maplayer.js"></script>
+<script type="text/javascript"src="maplayer.js"></script>
 
 </body>
 </html>

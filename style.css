@@ -8,8 +8,9 @@ button{
     right: 50%;
 }
 #map{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
+    height:600px;
+
+}
+h1{
+    text-align: center;
 }
