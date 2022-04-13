@@ -53,7 +53,7 @@ function drawline() {
 }
 function straight() {
   var polyline = turf.multiLineString([coords]);
-  var options = { tolerance: 0.01, highQuality: false };
+  var options = { tolerance: 1, highQuality: false };
   var simplified = turf.simplify(polyline, options);
   map.removeLayer(myLayer);
   myLayer.clearLayers();
